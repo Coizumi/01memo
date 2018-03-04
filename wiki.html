@@ -296,6 +296,8 @@ Error message and password prompt
 
 <li>Git(Win)でシンボリックリンク</li>
 
+<li>sh変数展開メモ</li>
+
 <li>subnetmask</li>
 
 <li>WindowsでGitの初期設定</li>
@@ -11163,7 +11165,7 @@ Error message and password prompt
 <div created="20180303041416019" modified="20180303041426497" title="$:/SiteTitle">
 <pre>思い出せなくなる前に</pre>
 </div>
-<div created="20180304065702720" modified="20180304085459252" title="$:/state/showeditpreview">
+<div created="20180304065702720" modified="20180304125432988" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20180303042727032" modified="20180303042727032" title="$:/state/tab--86143343">
@@ -11175,7 +11177,7 @@ Error message and password prompt
 <div created="20180303041549693" modified="20180303041549693" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
-<div list="Git(Win)でシンボリックリンク WindowsでGitの初期設定 subnetmask" title="$:/StoryList">
+<div list="sh変数展開メモ subnetmask" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11191,7 +11193,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///C:/Users/coizu/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/prjH/wiki.html&quot;
+            &quot;text&quot;: &quot;file:///D:/code/01_ccxppt/wiki.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -11211,7 +11213,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/C:/Users/coizu/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/prjH/wiki.html&quot;
+            &quot;text&quot;: &quot;/D:/code/01_ccxppt/wiki.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -11873,6 +11875,28 @@ Local Policys → User Rights Assignment
 しかしerrorは解消されなかった。
 
 2018-03-04：今はあきらめ</pre>
+</div>
+<div created="20180304125247072" modified="20180304125438215" tags="Linux Bash" title="sh変数展開メモ" type="text/plain">
+<pre>### フルパスの末尾の部分だけ取り出す
+prog=${val##*/}
+
+＜例＞
+##### /tmp/b000.sh #####
+echo &quot;${0##*/}&quot;
+echo '${0##*/}'
+echo &quot;&quot;
+echo &quot;${0}&quot;
+echo '${0}'
+##### /tmp/b000.sh #####
+===== 実行例 =====
+$ bash /tmp/b000.sh
+b000.sh
+${0##*/}
+
+/tmp/b000.sh
+${0}
+===== 実行例 =====
+</pre>
 </div>
 <div created="20180303041829680" modified="20180303043717080" tags="network" title="subnetmask">
 <pre>```
